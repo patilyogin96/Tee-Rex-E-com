@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeeRex Store- Geek Trust</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="intro">
+      <h1>TeeRex</h1>
+
+      <div>
+        <h3>Products</h3>
+        <a href="cart.html" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+        
+      </div>
+    </section>
+
+    <div class="search">
+      <input type="text" id="search-r" placeholder="Search T-shirts"  />
+
+      <i class="fa-solid fa-magnifying-glass" onclick="searchResult()"></i>
+      <i class="fa-solid fa-filter"></i>
+    </div>
+    <section class="main-content">
+      <div class="box1">
+        <div class="filter-box">
+          <h4>Colour</h4>
+          <input type="checkbox" id="colorf" name="red" value="red"  onclick="filtercolor(value)"/>
+          <label >Red</label><br />
+          <input type="checkbox" id="colorf" name="blue" value="blue" onclick="filtercolor(value)"  />
+          <label >Blue</label><br />
+          <input type="checkbox" id="colorf" name="grey" value="grey" onclick="filtercolor(value)" />
+          <label >Grey</label><br />
+          <input type="checkbox" id="colorf" name="voilet" value="voilet" onclick="filtercolor(value)">Voilet</label><br />
+          
+        </div>
+        <div class="filter-box">
+          <h4>Gender</h4>
+          <input type="checkbox" id="red" name="red" value="Red"  />
+          <label >Male</label><br />
+          <input type="checkbox" id="red" name="red" value="Red" />
+          <label >Female</label><br />
+        </div>
+        <div class="filter-box">
+          <h4>Price</h4>
+
+          <input type="checkbox" id="red" name="red" value="Red" />
+          <label >0-Rs 250</label><br />
+          <input type="checkbox" id="red" name="red" value="Red" />
+          <label>Rs 250 - Rs 500</label><br />
+          <input type="checkbox" id="red" name="red" value="Red" />
+          <label >Rs 500 - Rs 800</label><br />
+        </div>
+        <div class="filter-box">
+          <h4>Type</h4>
+
+          <input type="checkbox" id="red" name="red" value="Red" />
+          <label>Polo</label><br />
+          <input type="checkbox" id="red" name="red" value="Red" />
+          <label>Hoddie</label><br />
+          <input type="checkbox" id="red" name="red" value="Red" />
+          <label>V-type</label><br />
+        </div>
+      </div>
+
+      <div class="box2" id="box-f">
+        <!-- <div class="card">
+            <img src="images/sh1.jpg" alt="">
+
+            <div>
+            <p>Price</p>
+            <button >Add to Cart</button>
+            </div>
+            
+
+        </div>
+
+        <div class="card">
+            <img src="images/sh1.jpg" alt="">
+
+            <div>
+            <p>Price</p>
+            <button>Add to Cart</button>
+            </div>
+            
+
+        </div>
+
+        <div class="card">
+            <img src="images/sh1.jpg" alt="">
+
+            <div>
+            <p>Price</p>
+            <button>Add to Cart</button>
+            </div>
+            
+
+        </div>
+
+        <div class="card">
+            <img src="images/sh1.jpg" alt="">
+
+            <div>
+            <p>Price</p>
+            <button>Add to Cart</button>
+            </div>
+            
+
+        </div>
+
+        <div class="card">
+            <img src="images/sh1.jpg" alt="">
+
+            <div>
+            <p>Price</p>
+            <button>Add to Cart</button>
+            </div>
+            
+
+        </div>
+
+        <div class="card">
+            <img src="images/sh1.jpg" alt="">
+
+            <div>
+            <p>Price</p>
+            <button>Add to Cart</button>
+            </div>
+            
+
+        </div> -->
+
+        
+        
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+</html>

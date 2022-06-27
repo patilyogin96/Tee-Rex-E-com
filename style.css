@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(184, 185, 185);
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.intro h1{
+    margin-left: 15px;
+}
+
+.intro>div{
+    width: 100px;
+    display: flex;
+    margin-right: 30px;
+    justify-content: space-between;
+    
+}
+
+
+/* search button */
+
+.search{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search .fa-filter{
+    display: none;
+}
+.search>input{
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 3px;
+}
+@media(max-width:700px){
+    .search .fa-filter{
+        display: block;
+    }
+
+}
+
+
+/*style for main content starts here */
+.main-content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.box1{
+    width: 25%;
+    height:auto;
+    /* border: 2px solid red; */
+    box-shadow: 2px 5px 5px 5px rgb(141, 141, 141);
+    display: flex;
+    flex-direction: column;
+   /* justify-content: space-evenly; */
+   
+    
+    
+}
+
+.box2{
+    width: 65%;
+    height: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-shadow: 2px 5px 5px 5px rgb(141, 141, 141);
+}
+
+.card{
+    width: 260px;
+    height: 280px;
+    /* border: 2px solid blue; */
+    margin-top: 30px;
+    box-shadow: 1px 2px 5px 3px rgb(141, 141, 141);
+    background-color: rgb(252, 252, 252);
+}
+.card img{
+    width: 100%;
+    height: 215px;
+}
+
+.card>div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+#add-to-cart{
+    height: 24px;
+    margin-top: 4px;
+}
+
+@media(max-width:700px){
+    .box1{
+        display: none;
+    }
+
+    .box2{
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .card{
+        width: 350px;
+        height: 350px;
+       margin: auto;
+       margin-top: 20px;
+
+    }
+}
+
+
+
+.filter-box{
+    width: 150px;
+    height: auto;
+    /* border: 2px solid black; */
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.filter-box h4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.filter-box input{
+    margin-left: 4px;
+}
+
+
+
+/* Shopping cart styling */
+
+h2{
+    margin: 15px;
+    font-size: 20px;
+}
+
+#right-titles{
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+#right-titles>h3{
+margin-right: 20px;
+}
+
+.final-selected{
+    width: 450px;
+    height: 150px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 25px; */
+    margin-bottom: 1px;
+    /* padding: 15px; */
+    margin-left: 25px;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color: rgb(211, 206, 206);
+    box-shadow: 1px 1px 2px 1px rgb(148, 148, 148);
+
+
+}
+
+.final-selected img{
+    width: 120px;
+    height: 120px;
+    box-shadow: 1px 1px 2px 1px rgb(148, 148, 148);
+    border-radius: 5px;
+}
+
+.final-cart{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+/* final amount section */
+
+.main-content-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.final-amt{
+    width: 250px;
+    height: 120px;
+    box-shadow: 1px 1px 2px 1px rgb(148, 148, 148);
+    background-color: rgb(211, 206, 206);
+    margin-top: 15px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+@media(max-width:700px){
+    
+    .main-content-section{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .final-amt{
+
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    .final-selected{
+        flex-direction: column;
+        height: 265px;
+        width: 350px;
+        padding: 10px;
+    }
+    .final-selected img{
+        width: 150px;
+        height: 150px;
+    }
+    #price{
+        text-align: center;
+    }
+    #right-titles{
+        margin-right: 55px;
+    }
+
+
+    
+}
+
+
+
+/* quantity button */
+
+ul{
+    display: flex;
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+li>input{
+    width: 20px;
+    text-align: center;
+}
+
+li>button{
+    width: 19px;
+}
+
+
